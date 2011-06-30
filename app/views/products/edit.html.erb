@@ -1,14 +1,18 @@
   <div id="Header">
       <h1>Edit <%= @product.name %></h1>
     </div>
-  <div id="Leftbox"></div>
-  <div id="Middlebox">
+    <div id="Wrapper">
+      
+
+              
+  <div id="Content">
+              <%= error_messages_for @product %>
 
 
 <%= render :partial => 'form' %>
 
   </div>
-    <div id="Rightbox"></div>
+</div>
     <div id="Footer">
     Copyright 2011 - Made by Somnie  
   </div>

@@ -3,37 +3,41 @@ body
   padding:0px;
   margin:0px;
   text-align:center;
-  background:#808080;
+}
+.errorExplanation
+{
+border-top: 5px solid #B50D37;
+background: #DE5073;
+border-bottom: 5px solid #B50D37;
 }
 
 #Header
 {
+  padding:10px 0 0 0;
   height:47px;
   background:#FFFFFF;
   border-bottom: 3px solid #000000;
 }
 
-#Leftbox
+#Wrapper
 {
+  background:#808080;
 }
-#Middlebox
+#Content
 {
   background:#FFFFFF;
-  width:850px;
+  width:1000px;
   padding:20px 10px;
-  min-height:825px;
+  min-height:790px;
   margin: 0px auto 0px;
   border-left: 3px solid #000000;
   border-right: 3px solid #000000;
-}
-#Rightbox
-{
 }
 
 #Footer
 {
   background:#FFFFFF;
-  height:47px;
+  padding:20px 0 0 0;
   border-top: 3px solid #000000;
 }
 
@@ -44,7 +48,7 @@ h1
 }
 
 table { border-collapse: collapse; 
-  width: 850px;
+  width: 1000px;
 }
 td, th { padding: 5px; border: 1px solid #808080; }
 td#icons
