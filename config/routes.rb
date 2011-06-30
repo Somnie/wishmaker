@@ -1,5 +1,10 @@
 Wishmaker::Application.routes.draw do
-  resources :products
+  resources :products do
+    member do
+      get :research
+    end
+  end
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

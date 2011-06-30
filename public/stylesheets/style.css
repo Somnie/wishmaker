@@ -1,4 +1,53 @@
+body 
+{
+  padding:0px;
+  margin:0px;
+  text-align:center;
+  background:#808080;
+}
 
+#Header
+{
+  height:47px;
+  background:#FFFFFF;
+  border-bottom: 3px solid #000000;
+}
 
-table { border-collapse: collapse; }
+#Leftbox
+{
+}
+#Middlebox
+{
+  background:#FFFFFF;
+  width:850px;
+  padding:20px 10px;
+  min-height:825px;
+  margin: 0px auto 0px;
+  border-left: 3px solid #000000;
+  border-right: 3px solid #000000;
+}
+#Rightbox
+{
+}
+
+#Footer
+{
+  background:#FFFFFF;
+  height:47px;
+  border-top: 3px solid #000000;
+}
+
+h1
+{
+  margin:0px;
+  padding:0px;
+}
+
+table { border-collapse: collapse; 
+  width: 850px;
+}
 td, th { padding: 5px; border: 1px solid #808080; }
+td#icons
+{
+  min-width:35px;
+}

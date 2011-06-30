@@ -15,6 +15,7 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(params[:product])
     if @product.save
+      flash[:notice] = "Wish successfully created"
       redirect_to products_path
     else
       render :action => 'new'
@@ -38,5 +39,9 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @product.destroy
     redirect_to products_path
+  end
+  
+  def research
+    @product = Product.find(params[:id])
   end
 end

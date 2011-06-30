@@ -1,6 +1,7 @@
-1309440673
+1309450466
 ActionView	/home/somnie/www/wishmaker/vendor/plugins/dynamic_form/lib/action_view/helpers/dynamic_form.rb	module ActionView
 AddProducts	/home/somnie/www/wishmaker/db/migrate/20110630112209_add_products.rb	class AddProducts 
+AddResearch	/home/somnie/www/wishmaker/db/migrate/20110630140704_add_research.rb	class AddResearch 
 Application	/home/somnie/www/wishmaker/config/application.rb	  class Application 
 ApplicationController	/home/somnie/www/wishmaker/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/somnie/www/wishmaker/app/helpers/application_helper.rb	module ApplicationHelper
@@ -70,6 +71,7 @@ dirCheck	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function dir
 dirNodeCheck	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function dirNodeCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
 dispatch	/home/somnie/www/wishmaker/public/javascripts/effects.js	function dispatch(effect, eventName)
 down	/home/somnie/www/wishmaker/db/migrate/20110630112209_add_products.rb	  def self.down
+down	/home/somnie/www/wishmaker/db/migrate/20110630140704_add_research.rb	  def self.down
 each	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function each(iterator)
 each	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
@@ -190,6 +192,7 @@ reject	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function rejec
 relativize	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function relativize(element)
 request	/home/somnie/www/wishmaker/vendor/plugins/dynamic_form/test/dynamic_form_i18n_test.rb	  attr_reader :request
 request_forgery_protection_token	/home/somnie/www/wishmaker/vendor/plugins/dynamic_form/test/dynamic_form_test.rb	  attr_accessor :request_forgery_protection_token, :form_authenticity_token
+research	/home/somnie/www/wishmaker/app/controllers/products_controller.rb	  def research
 reverse	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function reverse(inline)
 round	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function round()
 scan	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function scan(pattern, iterator)
@@ -272,6 +275,7 @@ unfilterJSON	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function
 uniq	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function uniq(sorted)
 unset	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function unset(key)
 up	/home/somnie/www/wishmaker/db/migrate/20110630112209_add_products.rb	  def self.up
+up	/home/somnie/www/wishmaker/db/migrate/20110630140704_add_research.rb	  def self.up
 update	/home/somnie/www/wishmaker/app/controllers/products_controller.rb	  def update
 update	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function update(array, args)
 update	/home/somnie/www/wishmaker/public/javascripts/prototype.js	function update(element, content)
