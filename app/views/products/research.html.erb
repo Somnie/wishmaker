@@ -1,7 +1,9 @@
 <% @title = "Research for #{@product.name}" %>
-
-<% form_for @product do |f| %>
-  <%= error_messages_for @product %>
-  Research:<br> <%= f.text_area :research %><br>
-  <%= submit_tag "Submit" %>
+<%= semantic_form_for @product do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :research, :as => :text %>
+  <% end %>
+  <%= f.buttons do %>
+    <%= f.commit_button %>
+  <% end %>
 <% end %>
