@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Wishmaker</title>
+    <title>
+      Wishmaker
+    </title>
     <%= stylesheet_link_tag 'formtastic', 'my_formtastic_changes' %>
     <!--[if IE 6]><%= stylesheet_link_tag 'formtastic_ie6' %><![endif]-->
     <!--[if IE 7]><%= stylesheet_link_tag 'formtastic_ie7' %><![endif]-->
@@ -15,10 +17,20 @@
     </div>
     <div id="Wrapper">
       <div id="Content">
-        <div id="PermLinks">
-          <%= link_to(image_tag("icons/house.png"), products_path ) %>
-          <%= link_to(image_tag("icons/heart_add.png"), new_product_path ) %>
+        <div class="PermLinks">
+          <div id="Left">
+            <%= link_to(image_tag("icons/house.png"), products_path ) %> Home -
+            <%= link_to(image_tag("icons/heart_add.png"), new_product_path ) %> Create
+          </div>
+          <div id="Right">
+            Wishes: <%= Product.count %> -
+            Total Price: <%= number_to_currency(Product.sum(:price)) %> - 
+            Average Desire <%= (Product.sum(:desire)/Product.count.to_f).round %>
+          </div>
         </div>
+        <% if flash[:notice] %>
+          <div class="notice"><%= flash[:notice] %></div>
+        <% end %>
         <%= yield %>
       </div>
     </div>

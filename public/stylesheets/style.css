@@ -13,6 +13,16 @@ padding-left:20px;
 margin-bottom:20px;
 }
 
+.notice
+{
+  text-align:center;
+  border-top: 5px solid #B50D37;
+  background: #DE5073;
+  border-bottom: 5px solid #B50D37;
+  margin:20px 0;
+  
+}
+
 #Header
 {
   padding:10px 0 0 0;
@@ -21,7 +31,20 @@ margin-bottom:20px;
   border-bottom: 3px solid #000000;
   text-align:center;
 }
-
+.PermLinks
+{
+  height:30px;
+}
+#Left
+{
+  float:left;
+  text-align:left;
+}
+#Right
+{
+  float:right;
+  text-align:right;
+}
 #Wrapper
 {
   background:#808080;

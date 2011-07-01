@@ -43,5 +43,5 @@ class ProductsController < ApplicationController
   
   def research
     @product = Product.find(params[:id])
-  end
+  end  
 end
