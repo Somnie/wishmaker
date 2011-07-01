@@ -1,18 +1,7 @@
-  <div id="Header">
-<h1>Research for <%= @product.name %></h1>
-    </div>
-    <div id="Wrapper">
-  <div id="Content">
-
+<% @title = "Research for #{@product.name}" %>
 
 <% form_for @product do |f| %>
   <%= error_messages_for @product %>
-  Research:</br> <%= f.text_area :research %></br>
+  Research:<br> <%= f.text_area :research %><br>
   <%= submit_tag "Submit" %>
 <% end %>
-
-  </div>
-</div>
-    <div id="Footer">
-    Copyright 2011 - Made by Somnie  
-  </div>

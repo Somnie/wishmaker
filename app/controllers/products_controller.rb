@@ -1,11 +1,11 @@
 class ProductsController < ApplicationController
   def index
     @products = nil
-    if params[:sort_by] && %w(name price desire created_at).include?(params[:sort_by]) and params[:sort_direction] && %w(DESC ASC).include?(params[:sort_direction])
-      @products = Product.order("#{params[:sort_by]} #{params[:sort_direction]}")
+    @products = if params[:sort_by] && %w(name price desire created_at).include?(params[:sort_by]) and params[:sort_direction] && %w(DESC ASC).include?(params[:sort_direction])
+      Product.order("#{params[:sort_by]} #{params[:sort_direction]}")
     else
-      @products = Product.all
-    end
+      Product.all
+    end.paginate :page => params[:page], :per_page => 22
   end
 
   def new
